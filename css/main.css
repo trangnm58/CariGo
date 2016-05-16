@@ -11,11 +11,10 @@ body {
 
 form,
 #main {
-	max-width: 300px;
-	margin: 10px auto;
+	max-width: 480px;
+	margin: 0 auto;
 	padding: 10px 20px;
 	background: #f4f7f8;
-	border-radius: 8px;
 }
 
 h1 {
@@ -154,12 +153,4 @@ h6 {
 
 .served {
 	background-color: #e8eeef;
-}
-
-
-@media screen and (min-width: 480px) {
-	form,
-	#main {
-		max-width: 480px;
-	}
 }
