@@ -1,9 +1,9 @@
 function DeliveryServiceForm(){
-	this.requestID = 0;
 	this.uName = '';
 	this.uPhone = '';
 	this.dFromLocation = '';
 	this.dToLocation = '';
+	this.dDate = '';
 	this.dTime = '';
 	this.dTypeOfCargo = '';
 	this.dSpecialRequirement = '';

@@ -1,7 +1,7 @@
 
 angular.module('MainApp.controllers.month', [])
 
-.controller('BookDeliveryController',
+.controller('TrackRequestController',
 	function($scope, $rootScope, $document) {
 
 	$scope.uName = '';
@@ -12,6 +12,8 @@ angular.module('MainApp.controllers.month', [])
 	$scope.dTime = '';
 	$scope.dTypeOfCargo = '';
 	$scope.dSpecialRequirement = '';
+	$scope.dPayment = '';
+	$scope.dNumOfCargos = '';
 
 	$scope.dDeliveryService = new DeliveryServiceForm();
 
