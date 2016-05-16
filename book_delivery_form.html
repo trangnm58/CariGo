@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Delivery Service</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+		<form action="#" method="POST">
+		<h1>Book Delivery Service</h1>
+		<fieldset>
+			<legend><span class="number">1</span>Contact Information</legend>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="user_name">
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone">
+		</fieldset>
+		<fieldset>
+			<legend><span class="number">2</span>Delivery Details</legend>
+			<label for="from_loc">From Location:</label>
+			<input type="text" id="from_loc" name="from_loc"></input>
+			<label for="to_loc">To Location:</label>
+			<input type="text" id="to_loc" name="to_loc"></input>
+			<label for="date">Delivery Time:</label>
+			<input type="date" id="date" name="date"></input>
+			<input type="time" id="time" name="time"></input>
+			<label for="cargo_type">Type Of Cargo:</label>
+			<select id="cargo_type" name="cargo_type">
+				<option value="food">Food</option>
+				<option value="furniture">Furniture</option>
+				<option value="equipment">Equipment</option>
+				<option value="other">Other</option>
+			</select>
+			<label for="special">Special Requirements:</label>
+			<textarea id="special" name="special"></textarea>
+		</fieldset>
+		<button type="submit">Book</button>
+		</form>
+    </body>
+</html>
