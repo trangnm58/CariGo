@@ -11,36 +11,20 @@
     <body>
 		<div id="main">
 			<h1>Track the Requests</h1>
-			<div id="request-list">
-				<div class="item">
+			<div id="request-list" data-ng-repeat="request in requestList">
+				<div class="{{request.dStatus == 'unserved' ? 'item':'item served'}}" ng-click="viewRequestDetails(request.dRequestID)">
 					<div class="item-info">
-						<h3>Food</h3>
-						<h6>From: 13 Hai Ba Trung, Ha Noi</h6>
-						<h6>To: 26 Nguyen Chi Thanh, Ha Noi</h6>
+						<h3>{{request.dTypeOfCargo}}</h3>
+						<h6>From: {{request.dFromLocation}}</h6>
+						<h6>To: {{request.dToLocation}}</h6>
 					</div>
 					<div class="delivery-info">
 						<div class="delivery-man-number">
 							<img src="img/delivery-man.png" alt="delivery-man" />
-							<label>0</label>
+							<label>{{request.dDeliveryManNum}}</label>
 						</div>
 						<div class="min-money">
-							<label>MIN: 0 VND</label>
-						</div>
-					</div>
-				</div>
-				<div class="item served">
-					<div class="item-info">
-						<h3>Furniture</h3>
-						<h6>From: 13 Hai Ba Trung, Ha Noi</h6>
-						<h6>To: 26 Nguyen Chi Thanh, Ha Noi</h6>
-					</div>
-					<div class="delivery-info">
-						<div class="delivery-man-number">
-							<img src="img/delivery-man.png" alt="delivery-man" />
-							<label>5</label>
-						</div>
-						<div class="min-money">
-							<label>MIN: 500.000 VND</label>
+							<label>MIN: {{request.dMinMoney}}</label>
 						</div>
 					</div>
 				</div>

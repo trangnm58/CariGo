@@ -1,25 +1,12 @@
 
-angular.module('MainApp.controllers.month', [])
+angular.module('MainApp.controllers.book', [])
 
 .controller('BookDeliveryController',
 	function($scope, $rootScope, $document) {
 
-	$scope.uName = '';
-	$scope.uPhone = '';
-	$scope.dFromLocation = '';
-	$scope.dToLocation = '';
-	$scope.dDate = '';
-	$scope.dTime = '';
-	$scope.dTypeOfCargo = '';
-	$scope.dSpecialRequirement = '';
-
-	$scope.dDeliveryService = new DeliveryServiceForm();
-
-	var validate = function(){};
+	$scope.deliveryService = new DeliveryServiceForm();
 
 	$scope.bookDeliveryService = function(){
-		validate();
-
-		dDeliveryService.submit();
+		$scope.deliveryService.confirmBook();
 	};
 })

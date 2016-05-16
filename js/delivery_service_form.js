@@ -1,44 +1,47 @@
+
 function DeliveryServiceForm(){
 	this.uName = '';
 	this.uPhone = '';
-	this.dFromLocation = '';
-	this.dToLocation = '';
-	this.dDate = '';
-	this.dTime = '';
-	this.dTypeOfCargo = '';
+	this.dFromLocation = null;
+	this.dToLocation = null;
+	this.dDate = null;
+	this.dTime = null;
+	this.dTypeOfCargo = null;
 	this.dSpecialRequirement = '';
 
-	this.createService = function(){};
+	this.confirmBook = function(){
 
-	this.validateInfo = function(){};
+	};
 
-	this.viewRequestList = function(){};
+	this.viewRequestDetails = function(requestID){
 
-	this.viewRequestDetails = function(){};
+	};
 
-	this.viewDeliveryService = function(){};
+	//this.validateInfo = function(){};
 
-	this.getRequestList = function(){};
+	//this.viewRequestList = function(){};
 
-	this.getRequestByID = function(){};
+	//this.viewDeliveryService = function(){};
 
-	this.confirmBid = function(){};
+	//this.getRequestList = function(){};
 
-	this.confirmDelete = function(){};
+	//this.getRequestByID = function(){};
 
-	this.submit = function(){};
+	//this.confirmBid = function(){};
 
-	this.editRequestDetails = function(){};
+	//this.confirmDelete = function(){};
 
-	this.deleteRequest = function(){};
+	//this.submit = function(){};
 
-	this.searchAuto = function(){};
+	//this.editRequestDetails = function(){};
 
-	this.searchBy = function(){};
+	//this.deleteRequest = function(){};
 
-	this.searchFilter = function(){};
+	//this.searchAuto = function(){};
 
-	this.uploadDeliveryRequest = function(){};
+	//this.searchBy = function(){};
 
-	this.notificate = function(){};
+	//this.searchFilter = function(){};
+
+	//this.uploadDeliveryRequest = function(){};
 }

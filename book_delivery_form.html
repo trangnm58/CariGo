@@ -17,28 +17,28 @@
 		<fieldset>
 			<legend><span class="number">1</span>Contact Information</legend>
 			<label for="name">Name:</label>
-			<input type="text" id="name" name="user_name" ng-model="uName" required>
+			<input type="text" id="name" name="user_name" ng-model="deliveryService.uName" required>
 			<label for="phone">Phone:</label>
-			<input type="tel" id="phone" name="phone" ng-model="uPhone" required>
+			<input type="tel" id="phone" name="phone" ng-model="deliveryService.uPhone" required>
 		</fieldset>
 		<fieldset>
 			<legend><span class="number">2</span>Delivery Details</legend>
 			<label for="from_loc">From Location:</label>
-			<input type="text" id="from_loc" name="from_loc" ng-model="dFromLocation" required></input>
+			<input type="text" id="from_loc" name="from_loc" ng-model="deliveryService.dFromLocation" required></input>
 			<label for="to_loc">To Location:</label>
-			<input type="text" id="to_loc" name="to_loc" ng-model="dToLocation" required></input>
+			<input type="text" id="to_loc" name="to_loc" ng-model="deliveryService.dToLocation" required></input>
 			<label for="date">Delivery Time:</label>
-			<input type="date" id="date" name="date" ng-model="dDate" required></input>
-			<input type="time" id="time" name="time" ng-model="dTime" required></input>
+			<input type="date" id="date" name="date" ng-model="deliveryService.dDate" required></input>
+			<input type="time" id="time" name="time" ng-model="deliveryService.dTime" required></input>
 			<label for="cargo_type">Type Of Cargo:</label>
-			<select id="cargo_type" name="cargo_type" ng-model="dTypeOfCargo">
+			<select id="cargo_type" name="cargo_type" ng-model="deliveryService.dTypeOfCargo">
 				<option value="food">Food</option>
 				<option value="furniture">Furniture</option>
 				<option value="equipment">Equipment</option>
 				<option value="other">Other</option>
 			</select>
 			<label for="special">Special Requirements:</label>
-			<textarea id="special" name="special" ng-model="dSpecialRequirement"></textarea>
+			<textarea id="special" name="special" ng-model="deliveryService.dSpecialRequirement"></textarea>
 		</fieldset>
 		<button type="submit" ng-click="bookDeliveryService()">Book</button>
 		</form>
